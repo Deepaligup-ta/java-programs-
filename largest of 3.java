@@ -1,31 +1,20 @@
-import java.io.*;
+import java.lang.*;
+import java.util.*;
  
-class main {
-   
-  
-    static int biggestOfThree(int x, int y, int z)
-    {
+class GFG {
  
-        return z > (x > y ? x : y) ? z : ((x > y) ? x : y);
-    }
- 
-   
     public static void main(String[] args)
     {
- 
-       
         int a, b, c;
- 
-        
-        int largest;
+     
         a = 5;
         b = 10;
         c = 3;
-      
-        largest = biggestOfThree(a, b, c);
- 
-     
-        System.out.println(largest
+        ArrayList<Integer> x = new ArrayList<>();
+        x.add(a);
+        x.add(b);
+        x.add(c);
+        System.out.println(Collections.max(x)
                            + " is the largest number.");
     }
 }
